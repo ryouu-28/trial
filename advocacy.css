@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* Navigation Bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    min-width: 100%;
+    z-index: 9999;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    padding: 0px;
+    margin: 10px;
+}
+
+.navbar ul{
+    list-style-type: none;
+    display: flex;   
+    justify-content: center;
+    align-items: center; 
+    gap: 20px;
+    
+}
+
+.navbar li{
+    text-align: center;
+    align-items: center;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+
+}
+
+.navbar li a {
+    transition: all 0.3s ease;
+}
+
+.navbar li a:hover{
+    color: red;
+}
+
+.home {
+    display: none;
+}
+
+.logo {
+    max-height: 17%;
+    max-width: 17%;
+    height: auto;
+    margin-left: 5%;
+    transition: all 1s ease-out;
+    float: left;
+}
+
+label{
+    display: none;
+    color: white;
+    margin: 0;
+}
+
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+.donate {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    transition: all 0.6s ease-out;
+    color: white;
+    border-style: none;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    margin-left: 35px;
+}
+
+.donate:hover {background-color: red;}
+
+/* FIRST PAGE */
+.firstpage {
+    height: 100vh;
+    justify-content: center;
+    background-image: url(img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+
+}
+
+.educateText { 
+    position: relative; 
+    top: 25%; 
+    left: 0%; 
+    color: white; 
+    text-shadow: 2px 2px 8px #050505; 
+    font-family: "League Spartan", sans-serif; 
+    font-size: 100px; 
+    max-width: 50%;
+    width: 70%;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.subeduc {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 15px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    bottom: 50px;
+    text-shadow: 2px 2px 8px #050505; 
+}
+
+/* Second PAGE */
+.img3 {
+    height: 100vh;
+}
+
+.secondpage {
+    height: 100vh;
+    justify-content: center;
+    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.empower {
+    font-family: "Anton", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #E81616;
+    transform: translate(80%, 35%);
+    width: 50%;
+}
+
+.learn {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    color: red;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    transition: all 0.6s ease-out;
+    border: 2px solid red;
+    cursor: pointer;
+    transform: translate(210%, 200%);
+    
+}
+
+.learn:hover {
+    background-color: red;
+    color: white;
+}
+@media (max-width: 2000px) {
+
+}
+
+@media (min-width: 4000px){
+    .educateText  {
+        font-size: 300px;
+    }
+    .subeduc {
+        font-size: 98px;
+    }
+}
+
+@media (max-width: 1650px) {
+    .educateText {
+        font-size: 80px;
+    }
+    .subeduc {
+        font-size: 13px;
+    }
+
+    .navbar a {
+        font-size: 10px;
+    }
+
+    .donate {
+        padding: 20px;
+    }
+
+    .navbar {
+        margin: 0;
+    }
+
+    .learn {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+
+@media (max-width: 1400px) {
+    .educateText {
+        font-size: 65px;
+    }
+    .subeduc {
+        font-size: 10px;
+        bottom: 40px;
+    }
+    .logo {
+        max-width: 20%;
+        max-height: 20%;
+    }
+    .donate {
+        padding: 15px;
+    }
+}
+
+     @media screen and (max-width: 1000px) {
+
+        .educateText {
+            font-size: 50px;
+        }
+        .subeduc {
+            font-size: 6px;
+            bottom: 30px;
+            letter-spacing: 4px;
+        }
+
+        label {
+            display: block;
+            margin-right: 50px;
+            cursor: pointer;
+        }
+        
+        .menu {
+            font-size: 30px;
+        }
+    
+        ul {
+            font-size: 200px;
+            position: absolute;
+            flex-direction: column;
+            background-color: red;
+            transform: translate(0%, 35%);
+            width: 100%;
+            align-items: center;
+            transition: 0.5s;
+            padding: 20px 0;
+            transition: 0.5s;
+            height: 120vh;
+            gap: 0px;
+            left: -120%;
+        }
+    
+        .navbar a {
+            font-size: 30px;
+        }
+    
+        .home {
+            display: block;
+        }
+        .donate {
+            margin-right: 25px;
+            padding: 15px;
+            font-size: 30px;
+        }
+        .navbar li a:hover{
+            color: black;
+        }
+    
+        .donate:hover {
+            background-color: black;
+        }
+    
+        .logo {
+            max-width: 15%;
+            max-height: 15%;
+        }
+        .x {
+            position: relative;
+            font-size: 24px;
+            top: 10px;
+            right: 20px;
+            transform: translate(900%, -70%);
+        }
+    
+        input[type = "checkbox"]:checked ~ ul {
+            left: 0%;
+            position: absolute;
+        }
+    
+    }
+
+@media (max-width: 950px) {
+    .educateText {
+        font-size: 40px;
+    }
+    .subeduc {
+        font-size: 5px;
+        bottom: 25px;
+        letter-spacing: 3px;
+    }
+    .logo {
+        max-width: 10%;
+        max-height: 10%;
+    }
+    .menu {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .educateText {
+        font-size: 25px;
+    }
+    .subeduc {
+        font-size: 5px;
+        bottom: 15px;
+        letter-spacing: 3px;
+    }
+    .menu {
+        font-size: 10px;
+    }
+}
+}
